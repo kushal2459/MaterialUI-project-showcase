@@ -2,6 +2,7 @@ import React from 'react'
 
 import Card from './Card';
 import bg1 from "../img/bg1.png"
+import bg2 from "../img/bg2.png"
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -21,67 +22,72 @@ const Hero = () => {
   return (
     <Box>
 
-        <Typography variant="h4">
+        <Box sx={{ marginY:'40px' }}>
+        <Typography variant="h4" sx={{marginBottom:'20px'}}>
             Top Niagara Fall Tour
         </Typography>
 
-        <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2}>
+        <Box sx={{ flexGrow: 1}}>
+            <Grid container spacing={5} sx={{justifyContent:'center', alignItems:'center'}}>
 
-                <Grid item xs={3}>
-                    <Item>
+                <Grid item xs={6} md={3}>
+                
                         <Card url={bg1}/>
-                    </Item>
+                   
                 </Grid>
-                <Grid item xs={3}>
-                    <Item>
-                        <Card url={bg1}/>
-                    </Item>
+                <Grid item xs={6} md={3}>
+                   
+                        <Card url={bg2}/>
+                   
                 </Grid>
-                <Grid item xs={3}>
-                    <Item>
+                <Grid item xs={6} md={3}>
+                    
                         <Card url={bg1}/>
-                    </Item>
+                    
                 </Grid>
-                <Grid item xs={3}>
-                    <Item>
-                        <Card url={bg1}/>
-                    </Item>
+                <Grid item xs={6} md={3}>
+                  
+                        <Card url={bg2}/>
+                    
                 </Grid>
 
             </Grid>
         </Box>
-
-        <Typography variant="h4">
+        </Box>
+        
+        <Box sx={{ marginY:'40px' }}>
+        <Typography variant="h4" sx={{marginBottom:'20px'}}>
             Top Las Vegas Tour
         </Typography>
 
          <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2}>
+            <Grid container spacing={5}>
 
                 <Grid item xs={3}>
-                    <Item>
+                    
                         <Card url={bg1}/>
-                    </Item>
+                    
                 </Grid>
                 <Grid item xs={3}>
-                    <Item>
-                        <Card url={bg1}/>
-                    </Item>
+                    
+                        <Card url={bg2}/>
+                    
                 </Grid>
                 <Grid item xs={3}>
-                    <Item>
+                   
                         <Card url={bg1}/>
-                    </Item>
+                    
                 </Grid>
                 <Grid item xs={3}>
-                    <Item>
-                        <Card url={bg1}/>
-                    </Item>
+                   
+                        <Card url={bg2}/>
+                    
                 </Grid>
                 
             </Grid>
         </Box>
+        </Box>
+        
 
     </Box>
   )

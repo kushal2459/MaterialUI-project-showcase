@@ -1,10 +1,19 @@
 import Hero from "./components/Hero";
+import Container from '@mui/material/Container'; 
+import Nav from './components/Nav';
+import './index.css';
 
 function App() {
   return (
-    <div>
-      <Hero />
-    </div>
+    <>
+      <Nav />
+
+      <Container>
+        <Hero />
+      </Container>
+
+    </>
+    
   );
 }
 
